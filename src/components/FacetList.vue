@@ -1,9 +1,9 @@
 <template>
-  <div>
-        <div v-for="facets in facetList" :key="facets.facetName">
-            <div>{{facets.facetName}}</div>
+  <div class="facetList">
+        <div  v-for="facets in facetList" :key="facets.facetName">
+            <h5 class="facetItem">{{facets.facetName}}</h5>
             <div v-for="facet in facets.facets" :key="facet.name">
-                <div>{{facet.count}} - {{facet.name}} </div>
+                <div class="facetItem"><input type="checkbox" id="checkbox" v-model="facet.selected"> {{facet.name}} ({{facet.count}})</div>
             </div>
         </div>
   </div>
@@ -12,9 +12,13 @@
 <script>
 
 import { mapState } from 'vuex'
+import Vuetable from 'vuetable-2/src/components/Vuetable'
 
 export default {
   name: 'FacetList',
+  components: {
+    Vuetable
+  },
   computed: mapState([
     // map this.count to store.state.count
     'facetList'
@@ -37,5 +41,13 @@ li {
 }
 a {
   color: #42b983;
+}
+.facetItem {
+  text-align:start;
+}
+
+.facetList {
+  align-content: center;
+  text-align: center;
 }
 </style>

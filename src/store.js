@@ -9,14 +9,14 @@ export default new Vuex.Store({
       {
         'facetName':"Construction Companies",
         'facets':[
-          {name:"Sri",count:4,value:"JMR"},
-          {name:"Big Booom", count:12,value:"BB"}
+          {name:"Sri",count:4,value:"JMR",selected:false},
+          {name:"Big Booom", count:12,value:"BB",selected:false}
       ]},
       {
         "facetName" : "Landmark",
         'facets': [
-          {name:"Yes",count:30,value:"YES"},
-          {name:"No",count:150,value:"N)"},
+          {name:"Yes",count:30,value:"YES",selected:false},
+          {name:"No",count:150,value:"NO",selected:false},
         ]
       }
     ],
