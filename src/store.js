@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import { API } from 'aws-amplify'
 
 Vue.use(Vuex)
 
@@ -20,12 +21,32 @@ export default new Vuex.Store({
         ]
       }
     ],
-    'markers':[]
+    'markers':[],
+    'queryText':"",
+    "queryFilters":""
   },
   mutations: {
 
   },
   actions: {
-
+    refreshFacets:({state})=>{
+      let apiName = 'search';
+      let path = '/search'; 
+      let params = { // OPTIONAL
+          headers: {},
+          response: true,
+          queryStringParameters: {  // OPTIONAL
+              q: state.queryText,
+              "q.parser": "lucene",
+              "q.options": {fields:['borough_lit']},
+              "facet.borough_lit":{}
+          }
+      }
+      API.get(apiName, path, params).then(response => {
+          //console.log(response);
+      }).catch(error => {
+          //console.log(error.response)
+      });
+    }
   }
 })

@@ -8,6 +8,21 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import Amplify, * as AmplifyModules from 'aws-amplify'
+import { AmplifyPlugin } from 'aws-amplify-vue'
+Amplify.configure({
+  API: {
+    endpoints: [
+        {
+            name: "search",
+            endpoint: "https://sgjubhupaf.execute-api.us-east-1.amazonaws.com/PROD"
+        },
+    ]
+  }
+})
+
+Vue.use(AmplifyPlugin, AmplifyModules)
+
 Vue.config.productionTip = false
 
 Vue.use(VueGoogleMaps, {
