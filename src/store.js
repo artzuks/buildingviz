@@ -1,6 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { API } from 'aws-amplify'
+import Amplify, { API } from 'aws-amplify'
+
+Amplify.configure({
+  API: {
+    endpoints: [
+        {
+            name: "search",
+            endpoint: "https://sgjubhupaf.execute-api.us-east-1.amazonaws.com/PROD"
+        },
+    ]
+  }
+})
 
 Vue.use(Vuex)
 
@@ -22,14 +33,32 @@ export default new Vuex.Store({
       }
     ],
     'markers':[],
-    'queryText':"",
+    'queryText':"*",
     "queryFilters":""
   },
   mutations: {
-
+    mapFacetsToState(state,facets){
+      if (!facets){
+        return;
+      }
+      let newList = [];
+      for (let f in facets){
+        let newFacet = {
+          facetName: f,
+          facets:facets[f].buckets.map((fac)=>{
+            fac.selected = false;
+            fac.name = fac.value;
+            return fac;
+          })
+        }
+        newList.push(newFacet);
+      }
+      state.facetList = newList;
+    }
+      
   },
   actions: {
-    refreshFacets:({state})=>{
+    refreshFacets:({state,commit})=>{
       let apiName = 'search';
       let path = '/search'; 
       let params = { // OPTIONAL
@@ -38,12 +67,18 @@ export default new Vuex.Store({
           queryStringParameters: {  // OPTIONAL
               q: state.queryText,
               "q.parser": "lucene",
-              "q.options": {fields:['borough_lit']},
-              "facet.borough_lit":{}
+              "q.options": JSON.stringify({fields:['_id']}),
+              "facet.borough_lit":"{}",
+              "facet.filing_status_lit":"{}",
+              "facet.permit_status_lit":"{}",
+              "facet.city_lit":"{}",
+              "facet.gis_nta_name_lit":"{}",
+              "facet.permittee_s_business_name_lit":"{}"
           }
       }
       API.get(apiName, path, params).then(response => {
-          //console.log(response);
+          console.log(response);
+          commit('mapFacetsToState',response.data.facets);
       }).catch(error => {
           //console.log(error.response)
       });

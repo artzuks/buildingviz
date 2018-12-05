@@ -16,6 +16,11 @@ import Vuetable from 'vuetable-2/src/components/Vuetable'
 
 export default {
   name: 'FacetList',
+  mounted: function(){
+    console.log('mounted')
+    this.$store.dispatch('refreshFacets')
+  },
+
   components: {
     Vuetable
   },
