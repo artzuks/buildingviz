@@ -2,9 +2,11 @@
   <div>
     <GmapMap
       :center="{lat:40.785091, lng:-73.968285}"
-      :zoom="13"
+      :zoom="15"
       map-type-id="terrain"
       style="width: auto; height: 600px"
+      ref="mapRef"
+      @bounds_changed="boundsChanged('bounds', $event)"
     >
       <GmapMarker
         :key="index"
@@ -19,14 +21,39 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState,mapActions } from 'vuex'
+import { gmapApi } from 'vue2-google-maps'
 
 export default {
   name: 'MainComp',
-  computed: mapState([
-    // map this.count to store.state.count
-    'markers'
-  ])
+  data: function(){
+    return {
+      map:""
+    }
+  },
+  mounted (){
+    var that = this;
+    this.$refs.mapRef.$mapPromise.then((map) => {
+      that.map = map
+    })
+  },
+  computed: {
+    ...mapState([
+      // map this.count to store.state.count
+      'markers'
+    ]),
+    google:gmapApi
+  },
+  methods:{
+    ...mapActions(['setBounds','refreshFacets']),
+    'boundsChanged':function(b,e){
+      if (e){
+        let bounds = {ne:e.getNorthEast(),sw:e.getSouthWest()};
+        this.setBounds(bounds)
+        this.refreshFacets();
+      }
+    }
+  }
 }
 </script>
 

@@ -4,6 +4,8 @@ import store from './store'
 import router from './router'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import BootstrapVue from 'bootstrap-vue'
+import 'vue-instant/dist/vue-instant.css'
+import VueInstant from 'vue-instant'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -24,10 +26,11 @@ Amplify.configure({
 Vue.use(AmplifyPlugin, AmplifyModules)
 */
 Vue.config.productionTip = false
-
+Vue.use(VueInstant)
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyBKZE6mnRC0e9IuGcbzGji_XEjiRZirCkY'
+    key: 'AIzaSyBKZE6mnRC0e9IuGcbzGji_XEjiRZirCkY',
+    libraries: 'places'
   }
 })
 

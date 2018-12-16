@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Amplify, { API } from 'aws-amplify'
+import markets from './assets/hoods.json'
 
 Amplify.configure({
   API: {
@@ -56,7 +57,7 @@ class Facets{
       'borough_lit' : new Facet('borough_lit',"Borough"),
       'filing_status_lit' : new Facet('filing_status_lit', 'Filing Status'),
       'permit_status_lit' : new Facet('permit_status_lit', 'Permit Status'),
-      'city_lit' : new Facet('city_lit','City'),
+      //'city_lit' : new Facet('city_lit','City'),
       'gis_nta_name_lit' : new Facet('gis_nta_name_lit', 'Area'),
       'permittee_s_business_name_lit' : new Facet('permittee_s_business_name_lit','Business')
     } 
@@ -85,31 +86,35 @@ class Facets{
   }
 }
 
-function generateQuery(state){
-  state.facetLists
+function mapChartResponse(resp,keyName){
+  var start = new Date(resp.start);
+  var ret = [];
+  for (let i = 0; i< resp.target.length;++i){
+    let pushee = {
+      date: start.toISOString().substr(0,7),
+      dateObj: new Date(start)
+    }
+    pushee[keyName] = resp.target[i]
+    ret.push(pushee)
+    start.setMonth(start.getMonth()+1)
+  }
+  return ret
 }
 
 export default new Vuex.Store({
   state: {
-    /*'facetList': [
-      {
-        'facetName':"Construction Companies",
-        'facets':[
-          {name:"Sri",count:4,value:"JMR",selected:false},
-          {name:"Big Booom", count:12,value:"BB",selected:false}
-      ]},
-      {
-        "facetName" : "Landmark",
-        'facets': [
-          {name:"Yes",count:30,value:"YES",selected:false},
-          {name:"No",count:150,value:"NO",selected:false},
-        ]
-      }
-    ],*/
     'markers':[],
     'queryText':"*",
     "queryFilters":"",
-    'facetList': new Facets()
+    'facetList': new Facets(),
+    'chartDataCache': {
+      'rentactual':{},
+      'salesactual':{}
+    },
+    hoods: markets,
+    'selectedArea':"Manhattan",
+    bounds:{},
+    sliders:{rent:[2015,2020],sale:[2015,2020]}
   },
   mutations: {
     mapFacetsToState(state,facets){
@@ -134,6 +139,33 @@ export default new Vuex.Store({
       for (let f in facetResponse){
         state.facetList.updateFacet({facetName:f,newValues:facetResponse[f].buckets})       
       }
+    },
+    updateChartDataCache(state,{path,name,values}) {
+      let hoods = state.hoods;
+      for (let i = 0;i<hoods.length;++i){
+        if (hoods[i].areaName === name){
+          hoods[i][path] = values;
+        }
+      }
+    },
+    updateArea(state,area){
+      state.selectedArea = area;
+    },
+    setBounds(state,bounds){
+      state.bounds = bounds
+    },
+    updateSlider(state,val){
+      state.sliders[val.name] = val.val;
+    },
+    updateMarkers(state,markers){
+      let tmk = markers.map((el)=>{
+        el.position = {
+          lng : parseFloat(el.fields.gis_longitude_t),
+          lat : parseFloat(el.fields.gis_latitude_t)
+        }
+        return el;
+      })
+      state.markers = tmk;
     }
   },
   actions: {
@@ -151,7 +183,8 @@ export default new Vuex.Store({
           response: true,
           queryStringParameters: {  // OPTIONAL
               "q.parser": "lucene",
-              "q.options": JSON.stringify({fields:['_id']})
+              "q.options": JSON.stringify({fields:['_id']}),
+              "size":150
           }
       }
       let facets = state.facetList.facetNames.map((f)=>"facet."+f);
@@ -172,14 +205,101 @@ export default new Vuex.Store({
         query = "*"
       }
       params.queryStringParameters.q = query;
-
+      if (state.bounds.ne && state.bounds.sw){
+        let fq = "gis_location_latlon:['" 
+              +  state.bounds.ne.lat() + "," + state.bounds.sw.lng() + "','"
+              +  state.bounds.sw.lat() + "," + state.bounds.ne.lng() + "']"
+        params.queryStringParameters.fq = fq
+      }
       API.get(apiName, path, params).then(response => {
           console.log(response);
           //commit('mapFacetsToState',response.data.facets);
           commit('updateFacets',response.data.facets);
+          commit('updateMarkers',response.data.hits.hit)
       }).catch(error => {
           //console.log(error.response)
       });
+    },
+    rentData:({state,commit},hood) =>{
+      let area = state.hoods.find((h)=>h.areaName===hood);
+      if (area.rentactual.length > 0 && area.rentprediction.length > 0){
+        return;
+      }
+      let apiName = 'search';
+      let obj = 'forecastout/rent/actual/' + hood + '.json';
+      let path = '/buildingviz-data/' + encodeURIComponent(obj);
+      API.get(apiName, path).then(response => {
+          console.log(response);
+          commit('updateChartDataCache',{ 
+                                          path:"rentactual",
+                                          name:hood,
+                                          values: mapChartResponse(response,'actual')
+
+                                    })
+      }).catch(error => {
+          console.log(error.response)
+      });
+      obj = 'forecastout/rent/prediction/' + hood + '.0.5.json';
+      path = '/buildingviz-data/' + encodeURIComponent(obj);
+      API.get(apiName, path).then(response => {
+        console.log(response);
+        commit('updateChartDataCache',{ 
+                                        path:"rentprediction",
+                                        name:hood,
+                                        values: mapChartResponse(response,'prediction')
+
+                                  })
+        }).catch(error => {
+            console.log(error.response)
+      });
+    },
+    salesData:({state,commit},hood) =>{
+      let area = state.hoods.find((h)=>h.areaName===hood);
+      if (area.saleactual.length > 0 && area.saleprediction.length > 0){
+        return;
+      }
+      let apiName = 'search';
+      let obj = 'forecastout/sales/actual/' + hood + '.json';
+      let path = '/buildingviz-data/' + encodeURIComponent(obj);
+      API.get(apiName, path).then(response => {
+          console.log(response);
+          commit('updateChartDataCache',{ 
+                                          path:"saleactual",
+                                          name:hood,
+                                          values: mapChartResponse(response,'actual')
+
+                                    })
+      }).catch(error => {
+          console.log(error.response)
+      });
+      obj = 'forecastout/sales/prediction/' + hood + '.0.5.json';
+      path = '/buildingviz-data/' + encodeURIComponent(obj);
+      API.get(apiName, path).then(response => {
+        console.log(response);
+        commit('updateChartDataCache',{ 
+                                        path:"saleprediction",
+                                        name:hood,
+                                        values: mapChartResponse(response,'prediction')
+
+                                  })
+
+        }).catch(error => {
+            console.log(error.response)
+      });
+    },
+    updateArea:({commit},hood)=>{
+      commit('updateArea',hood)
+    },
+    setBounds:({commit},bounds)=>{
+      commit('setBounds',bounds)
+    },
+    updateSlider:({commit},val)=>{
+      commit('updateSlider',val)
+    }
+  },
+  getters : {
+    getChartData: (state,getters) => (hood) => {
+      
     }
   }
 })

@@ -1,0 +1,1820 @@
+[
+    {
+      "areaName": "All Downtown",
+      "Borough": "Manhattan",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "All Midtown",
+      "Borough": "Manhattan",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "All Upper East Side",
+      "Borough": "Manhattan",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "All Upper Manhattan",
+      "Borough": "Manhattan",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "All Upper West Side",
+      "Borough": "Manhattan",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Alley Park",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Astoria",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Auburndale",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bath Beach",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Battery Park City",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bay Ridge",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Baychester",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bayside",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bedford Park",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bedford-Stuyvesant",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bellerose",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Belmont",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bensonhurst",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bergen Beach",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Boerum Hill",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Borough Park",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bowne Park",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Briarwood",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Brighton Beach",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bronx",
+      "Borough": "Bronx",
+      "areaType": "borough",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bronxwood",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Brooklyn",
+      "Borough": "Brooklyn",
+      "areaType": "borough",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Brooklyn Heights",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Brookville",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Brownsville",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Bushwick",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Cambria Heights",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Canarsie",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Carroll Gardens",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Castle Hill",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Central Harlem",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Central Park South",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Central Queens",
+      "Borough": "Queens",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Chelsea",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Chinatown",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "City Island",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Civic Center",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Clearview",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Clinton Hill",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Co-op City",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Cobble Hill",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "College Point",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Columbia St Waterfront District",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Concourse",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Coney Island",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Corona",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Country Club",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Crotona Park East",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Crown Heights",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "DUMBO",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Ditmas Park",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Douglaston",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Downtown Brooklyn",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Dyker Heights",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "East Brooklyn",
+      "Borough": "Brooklyn",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "East Elmhurst",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "East Flatbush",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "East Harlem",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "East New York",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "East Tremont",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "East Village",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Eastchester",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Edenwald",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Elmhurst",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Financial District",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Flatbush",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Flatiron",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Flatlands",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Floral Park",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Flushing",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Fordham",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Forest Hills",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Fort Greene",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Fresh Meadows",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Gerritsen Beach",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Glen Oaks",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Glendale",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Gowanus",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Gramercy Park",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Gravesend",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Greenpoint",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Greenwich Village",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Greenwood",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Hamilton Heights",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Highbridge",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Hillcrest",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Hollis",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Howard Beach",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Hunts Point",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Inwood",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Jackson Heights",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Jamaica",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Jamaica Estates",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Jamaica Hills",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Kensington",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Kew Gardens",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Kew Gardens Hills",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Kingsbridge",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Laconia",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Laurelton",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Little Italy",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Little Neck",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Long Island City",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Longwood",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Lower East Side",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Manhattan",
+      "Borough": "Manhattan",
+      "areaType": "borough",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Manhattan Beach",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Manhattanville",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Marble Hill",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Marine Park",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Maspeth",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Melrose",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Middle Village",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Midtown",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Midtown East",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Midtown South",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Midtown West",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Midwood",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Mill Basin",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Morningside Heights",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Morris Heights",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Morris Park",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Morrisania",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Mott Haven",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "NYC",
+      "Borough": [],
+      "areaType": "city",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "New Hyde Park",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Nolita",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "North Brooklyn",
+      "Borough": "Brooklyn",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "North Corona",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Northeast Queens",
+      "Borough": "Queens",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Northwest Brooklyn",
+      "Borough": "Brooklyn",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Northwest Queens",
+      "Borough": "Queens",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Norwood",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Oakland Gardens",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Ocean Parkway",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Old Mill Basin",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Ozone Park",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Park Slope",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Parkchester",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Pelham Bay",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Pelham Gardens",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Pelham Parkway",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Pomonok",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Port Morris",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Prospect Heights",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Prospect Lefferts Gardens",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Prospect Park",
+      "Borough": "Brooklyn",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Prospect Park South",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Queens",
+      "Borough": "Queens",
+      "areaType": "borough",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Queens Village",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Queensboro Hill",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Red Hook",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Rego Park",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Richmond Hill",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Ridgewood",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Riverdale",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Rockaway All",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Roosevelt Island",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Rosedale",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Schuylerville",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Seagate",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Sheepshead Bay",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Soho",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Soundview",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "South Brooklyn",
+      "Borough": "Brooklyn",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "South Jamaica",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "South Ozone Park",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "South Queens",
+      "Borough": "Queens",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "South Richmond Hill",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Springfield Gardens",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "St. Albans",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Staten Island",
+      "Borough": "Staten Island",
+      "areaType": "borough",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Stuyvesant Town/PCV",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Sunnyside",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Sunset Park",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "The Rockaways",
+      "Borough": "Queens",
+      "areaType": "submarket",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Throgs Neck",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Tremont",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Tribeca",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "University Heights",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Upper East Side",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Upper West Side",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Utopia",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Van Nest",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Wakefield",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Washington Heights",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "West Harlem",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "West Village",
+      "Borough": "Manhattan",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Westchester Village",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Whitestone",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Williamsbridge",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Williamsburg",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Windsor Terrace",
+      "Borough": "Brooklyn",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Woodhaven",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Woodlawn",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Woodside",
+      "Borough": "Queens",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    },
+    {
+      "areaName": "Woodstock",
+      "Borough": "Bronx",
+      "areaType": "neighborhood",
+      "rentactual": [],
+      "rentprediction": [],
+      "saleactual": [],
+      "saleprediction": []
+    }
+   ]

@@ -2,8 +2,15 @@
   <div class="facetList">
         <div  v-for="facets in facetList.facets" :key="facets.facetName">
             <h5 class="facetItem">{{facets.facetName}}</h5>
-            <div v-for="facet in facets.values" :key="facet.name">
-                <div class="facetItem"><input type="checkbox" id="checkbox" v-model="facet.selected" @input=handleSelect(facets.facetName,facet,$event) > {{facet.name}} ({{facet.count}})</div>
+            <div class="form-check ">
+              <div v-for="facet in facets.values" :key="facet.name">
+                  <div class="facetItem form-check">
+                    <input class="form-check-input form-check-input-sm" type="checkbox" :id="facets.facetName + facet.name" v-model="facet.selected" @input=handleSelect(facets.facetName,facet,$event) />
+                    <label class="form-check-label form-check-lavel-sm" :for="facets.facetName + facet.name">
+                      {{facet.name}} ({{facet.count}})
+                    </label>
+                  </div>
+              </div>
             </div>
         </div>
   </div>
