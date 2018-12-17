@@ -13,7 +13,7 @@
         v-for="(m, index) in markers"
         :position="m.position"
         :clickable="true"
-        :draggable="true"
+        :draggable="false"
         @click="center=m.position"
       />
     </GmapMap>
@@ -23,6 +23,7 @@
 <script>
 import { mapState,mapActions } from 'vuex'
 import { gmapApi } from 'vue2-google-maps'
+var _ = require('lodash');
 
 export default {
   name: 'MainComp',
@@ -46,13 +47,13 @@ export default {
   },
   methods:{
     ...mapActions(['setBounds','refreshFacets']),
-    'boundsChanged':function(b,e){
+    'boundsChanged':_.debounce(function(b,e){
       if (e){
         let bounds = {ne:e.getNorthEast(),sw:e.getSouthWest()};
         this.setBounds(bounds)
         this.refreshFacets();
       }
-    }
+    },100)
   }
 }
 </script>

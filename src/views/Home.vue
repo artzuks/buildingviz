@@ -24,7 +24,9 @@
         <b-col md="6" class="py-6">
           <MainComp/>
         </b-col>
-        
+        <b-col md="3" class="py-3">
+          <BarChartz/>
+        </b-col>
       </b-row>
     
     </b-container>
@@ -38,6 +40,7 @@ import FacetList from '@/components/FacetList.vue'
 import Slider from '@/components/Slider.vue'
 import SearchBox from '@/components/SearchBox.vue'
 import LineChartz from '@/components/LineChart.vue'
+import BarChartz from '@/components/BarChart.vue'
 import AutoComp from '@/components/AutoComp.vue'
 import {mapState} from 'vuex'
 
@@ -49,7 +52,8 @@ export default {
     Slider,
     SearchBox,
     LineChartz,
-    AutoComp
+    AutoComp,
+    BarChartz
   },
   computed:{
     ...mapState(['selectedArea'])

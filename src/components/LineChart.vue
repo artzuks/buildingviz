@@ -63,7 +63,6 @@ export default {
           let sliderValues = this.sliders[this.prepath];
           let start = new Date(sliderValues[0],0,1)
           let end = new Date(sliderValues[1],11,31)
-          console.log(start,end)
           if (hood){
               if (this.prepath === 'rent'){
                   return hood.rentactual.concat(hood.rentprediction).filter((el)=>el.dateObj>start&&el.dateObj<end);

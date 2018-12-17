@@ -17,10 +17,11 @@ Amplify.configure({
 Vue.use(Vuex)
 
 class Facet{
-  constructor(fieldName,displayName){
+  constructor(fieldName,displayName,buckets){
     this.fieldName = fieldName;
     this.displayName = displayName;
     this.values = [];
+    this.buckets = buckets;
   }
   get facetName(){
     return this.displayName
@@ -53,13 +54,23 @@ class Facet{
 
 class Facets{
   constructor(){
+    let buckets = [];
+    let begin = 2010
+    for (;begin<2019;++begin){
+      let start = new Date(begin,0);
+      let end = new Date(begin,11,31,23,59,59);
+      buckets.push("['" + start.toISOString() + "','" + end.toISOString() + "']");
+    }
+    
+
     this.facets = {
       'borough_lit' : new Facet('borough_lit',"Borough"),
       'filing_status_lit' : new Facet('filing_status_lit', 'Filing Status'),
       'permit_status_lit' : new Facet('permit_status_lit', 'Permit Status'),
       //'city_lit' : new Facet('city_lit','City'),
       'gis_nta_name_lit' : new Facet('gis_nta_name_lit', 'Area'),
-      'permittee_s_business_name_lit' : new Facet('permittee_s_business_name_lit','Business')
+      'permittee_s_business_name_lit' : new Facet('permittee_s_business_name_lit','Business'),
+      'filing_date_d': new Facet('filing_date_d','Year',buckets)
     } 
   }
 
@@ -74,6 +85,10 @@ class Facets{
   
   get facetNames(){
     return Object.keys(this.facets);
+  }
+
+  get facetList(){
+    return Object.values(this.facets);
   }
 
   getActiveFacets(){
@@ -187,8 +202,21 @@ export default new Vuex.Store({
               "size":150
           }
       }
-      let facets = state.facetList.facetNames.map((f)=>"facet."+f);
-      facets.forEach((f)=>params.queryStringParameters[f]="{}")
+
+      let facets = state.facetList.facetList.map((f)=>{
+        let q = {};
+        if (f.buckets){
+          q['buckets'] = f.buckets;
+        }
+        return {
+          name:"facet."+f.fieldName,
+          q:JSON.stringify(q)
+        }
+        
+      });
+      facets.forEach((f)=>{
+        params.queryStringParameters[f.name]=f.q
+      })
 
       let activeFacets = state.facetList.getActiveFacets();
       let queries = [];
