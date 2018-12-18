@@ -5,13 +5,12 @@
             v-model="value" 
             :disabled="false"  
             @clear="clear"
-            @enter="enter"
             @click-button="clickButton"
             :show-autocomplete="true" 
             :autofocus="false" 
             :suggestions="hoods" 
             name="autocomp" 
-            placeholder="Enter Neighborhood" 
+            placeholder="Enter Neighborhood to Find Price Predictions" 
             type="google">
         </vue-instant>
     </div>
@@ -41,17 +40,16 @@ export default {
             this.updateArea(this.value)
             this.rentData(this.value)
             this.salesData(this.value)
-        },
-        enter: function(ev) {
-            console.log('enter',this.value)
+            let subarea = this.hoods.find((e)=>e.areaName===this.value);
+            if (subarea){
+                this.rentData(subarea.Borough)
+                this.salesData(subarea.Borough)
+            }
         },
         ...mapActions(['updateArea','rentData','salesData'])
     },
     computed: {
-        ...mapState(['hoods']),
-        suggestions: function (){
-            return this.hoods.map((el)=>el.areaName)
-        }
+        ...mapState(['hoods'])
     }/*,
     components: {
         'vue-instant': VueInstant.VueInstant

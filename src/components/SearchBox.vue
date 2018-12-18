@@ -22,7 +22,9 @@ export default {
   methods: {
       setPlace(place) {
         this.place = place
+        this.changeMapCenter(place.geometry.location)
       },
+      ...mapActions(['changeMapCenter'])
   }
   
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="facetList">
-        <div  v-for="facets in facetList.facets" :key="facets.facetName">
+        <div  v-for="facets in facetList.facets" :key="facets.facetName" v-show="facets.showInList">
             <h5 class="facetItem">{{facets.facetName}}</h5>
             <div class="form-check ">
               <div v-for="facet in facets.values" :key="facet.name">
@@ -30,10 +30,10 @@ export default {
   components: {
     Vuetable
   },
-  computed: mapState([
-    // map this.count to store.state.count
-    'facetList'
-  ]),
+  computed: {...mapState([
+      'facetList'
+    ])
+  },
   methods:{
     ...mapActions(['refreshFacets']),
     handleSelect: function(fieldName,facet,e){

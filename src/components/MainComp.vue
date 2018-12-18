@@ -1,20 +1,24 @@
 <template>
   <div>
     <GmapMap
-      :center="{lat:40.785091, lng:-73.968285}"
+      :center="mapCenter"
       :zoom="15"
       map-type-id="terrain"
       style="width: auto; height: 600px"
       ref="mapRef"
       @bounds_changed="boundsChanged('bounds', $event)"
     >
+      <GmapInfoWindow :options="infoOptions" :position="mapCenter" :opened="mapInfoOpen" @closeclick="closeMapInfo">
+        {{mapInfoText}}
+      </GmapInfoWindow>
+
       <GmapMarker
         :key="index"
         v-for="(m, index) in markers"
         :position="m.position"
         :clickable="true"
         :draggable="false"
-        @click="center=m.position"
+        @click="clickEvent(m)"
       />
     </GmapMap>
   </div>
@@ -22,6 +26,7 @@
 
 <script>
 import { mapState,mapActions } from 'vuex'
+import SearchBox from '@/components/SearchBox.vue'
 import { gmapApi } from 'vue2-google-maps'
 var _ = require('lodash');
 
@@ -29,7 +34,15 @@ export default {
   name: 'MainComp',
   data: function(){
     return {
-      map:""
+      map:"",
+      infoWinOpen:true,
+      infoContent:'poop lol',
+      infoOptions: {
+            pixelOffset: {
+              width: 0,
+              height: -35
+            }
+          },
     }
   },
   mounted (){
@@ -40,20 +53,28 @@ export default {
   },
   computed: {
     ...mapState([
-      // map this.count to store.state.count
-      'markers'
+      'markers',
+      'mapCenter',
+      'mapInfoOpen',
+      'mapInfoText'
     ]),
     google:gmapApi
   },
   methods:{
-    ...mapActions(['setBounds','refreshFacets']),
+    ...mapActions(['setBounds','refreshFacets','closeMapInfo']),
     'boundsChanged':_.debounce(function(b,e){
       if (e){
         let bounds = {ne:e.getNorthEast(),sw:e.getSouthWest()};
         this.setBounds(bounds)
         this.refreshFacets();
       }
-    },100)
+    },100),
+    clickEvent:(ev)=>{
+      console.log(ev)
+    }
+  },
+  components: {
+    SearchBox
   }
 }
 </script>

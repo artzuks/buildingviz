@@ -22,6 +22,7 @@ class Facet{
     this.displayName = displayName;
     this.values = [];
     this.buckets = buckets;
+    this.showInList  = true;
   }
   get facetName(){
     return this.displayName
@@ -61,7 +62,13 @@ class Facets{
       let end = new Date(begin,11,31,23,59,59);
       buckets.push("['" + start.toISOString() + "','" + end.toISOString() + "']");
     }
-    
+
+    let expBuckets = [];
+    let today = new Date();
+    let expEpr1 = "{,'" + today.toISOString() + "']";
+    let expEpr2 = "['" + today.toISOString() + "',}";
+    expBuckets.push(expEpr1);
+    expBuckets.push(expEpr2);
 
     this.facets = {
       'borough_lit' : new Facet('borough_lit',"Borough"),
@@ -70,8 +77,11 @@ class Facets{
       //'city_lit' : new Facet('city_lit','City'),
       'gis_nta_name_lit' : new Facet('gis_nta_name_lit', 'Area'),
       'permittee_s_business_name_lit' : new Facet('permittee_s_business_name_lit','Business'),
-      'filing_date_d': new Facet('filing_date_d','Year',buckets)
+      'filing_date_d': new Facet('filing_date_d','Year',buckets),
+      'expiration_date_d':new Facet('expiration_date_d',"Expiration Date",expBuckets)
     } 
+    this.facets['filing_date_d'].showInList = false;
+    this.facets['expiration_date_d'].showInList = false;
   }
 
   updateFacet({facetName,newValues}){
@@ -122,14 +132,14 @@ export default new Vuex.Store({
     'queryText':"*",
     "queryFilters":"",
     'facetList': new Facets(),
-    'chartDataCache': {
-      'rentactual':{},
-      'salesactual':{}
-    },
     hoods: markets,
-    'selectedArea':"Manhattan",
+    'selectedArea':"Long Island City",
     bounds:{},
-    sliders:{rent:[2015,2020],sale:[2015,2020]}
+    sliders:{rent:[2015,2020],sale:[2015,2020]},
+    expFilter:false,
+    mapCenter:{lat:40.785091, lng:-73.968285},
+    'mapInfoOpen': false,
+    'mapInfoText': 'poo'
   },
   mutations: {
     mapFacetsToState(state,facets){
@@ -181,6 +191,15 @@ export default new Vuex.Store({
         return el;
       })
       state.markers = tmk;
+    },
+    expFilter(state){
+      state.expFilter = !state.expFilter;
+    },
+    setMapCenter(state,center){
+      state.mapCenter = center
+    },
+    setMapInfo(state,val){
+      state.mapInfoOpen = val
     }
   },
   actions: {
@@ -227,6 +246,9 @@ export default new Vuex.Store({
           queries.push(qs);
         }
         
+      }
+      if (state.expFilter){
+        queries.push("expiration_date_d:[" + (new Date()).toISOString() + " TO *]")
       }
       let query = queries.join(' AND ');
       if (!query){
@@ -323,6 +345,15 @@ export default new Vuex.Store({
     },
     updateSlider:({commit},val)=>{
       commit('updateSlider',val)
+    },
+    toggleExpFilter:({commit})=>{
+      commit('expFilter')
+    },
+    changeMapCenter:({commit},center)=>{
+      commit('setMapCenter',center)
+    },
+    closeMapInfo:({commit})=>{
+      commit('setMapInfo',false)
     }
   },
   getters : {

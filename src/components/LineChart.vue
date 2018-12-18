@@ -56,7 +56,7 @@ export default {
           return 'chart' + this.prepath + this.areaName
       },
       getHeading(){
-          return this.prepath==='rent'?"Median Asking Rent":"Median Sales Price"
+          return this.prepath==='rent'?this.areaName + " Median Asking Rent": this.areaName + " Median Sales Price"
       },
       getChartData(){
           let hood = this.hoods.find((h)=>h.areaName===this.areaName);
@@ -72,7 +72,7 @@ export default {
               
           }
       },
-      ...mapState(['chartDataCache','hoods','sliders'])
+      ...mapState(['hoods','sliders'])
   }
   
 }
