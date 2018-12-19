@@ -7,6 +7,7 @@ import BootstrapVue from 'bootstrap-vue'
 import 'vue-instant/dist/vue-instant.css'
 import VueInstant from 'vue-instant'
 
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -35,6 +36,8 @@ Vue.use(VueGoogleMaps, {
 })
 
 Vue.use(BootstrapVue);
+
+import './assets/boot.css'
 
 new Vue({
   store,

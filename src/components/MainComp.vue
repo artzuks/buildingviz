@@ -4,7 +4,7 @@
       :center="mapCenter"
       :zoom="15"
       map-type-id="terrain"
-      style="width: auto; height: 600px"
+      style="width: auto; height: 700px"
       ref="mapRef"
       @bounds_changed="boundsChanged('bounds', $event)"
     >
@@ -82,18 +82,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 </style>

@@ -3,8 +3,9 @@
       <gmap-autocomplete
         placeholder="Enter Neighborhood or Address You Are Moving To"
         @place_changed="setPlace"
-        class="form-control">
+        class="form-control form-control-lg">
       </gmap-autocomplete>
+      <br>
   </div>
 </template>
 

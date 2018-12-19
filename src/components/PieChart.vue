@@ -1,6 +1,6 @@
 <template>
   <div class="pieChart">
-      <h2>{{getHeading}}</h2>
+      <h5>{{getHeading}}</h5>
       <donut-chart
         :id="getId"
         :data="getChartData"
@@ -69,3 +69,11 @@ export default {
   
 }
 </script>
+
+<style>
+text {
+color:#888888;
+fill:#888888;
+}
+
+</style>

@@ -1,6 +1,6 @@
 <template>
   <div class="barChart">
-      <h2>{{getHeading}}</h2>
+      <h5>{{getHeading}}</h5>
       <bar-chart
         :id="getId"
         :data="getChartData"

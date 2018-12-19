@@ -6,6 +6,7 @@ import Forecast from './views/Forecast.vue'
 Vue.use(Router)
 
 export default new Router({
+  linkExactActiveClass:"active",
   routes: [
     {
       path: '/',

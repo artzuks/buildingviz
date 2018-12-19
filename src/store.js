@@ -144,7 +144,7 @@ export default new Vuex.Store({
     expFilter:false,
     mapCenter:{lat:40.785091, lng:-73.968285},
     'mapInfoOpen': false,
-    'mapInfoText': 'poo'
+    'mapInfoText': 'test'
   },
   mutations: {
     mapFacetsToState(state,facets){
@@ -208,6 +208,10 @@ export default new Vuex.Store({
     },
     setMapInfoText(state,val){
       state.mapInfoText = val;
+    },
+    toggleFacet(state,{fieldName,facet}){
+      let fac = state.facetList.facets[fieldName].values.find((f)=>f.value==facet.value)
+      fac.selected = !fac.selected
     }
   },
   actions: {
@@ -372,7 +376,7 @@ export default new Vuex.Store({
       }else{
         permitType = selection.fields.permit_type_lit
       }
-      let newText = "<div>Address: " + selection.fields.street_name_t + '<br>' +
+      let newText = "<div>Address: " + (selection.fields.house_t?selection.fields.house_t:"") + " " + selection.fields.street_name_t + '<br>' +
                     "Construction Company: " + selection.fields.permittee_s_business_name_lit + '<br>' +
                     "Permit Type: " + permitType;
       if (subType){
@@ -382,11 +386,9 @@ export default new Vuex.Store({
       commit('setMapInfo',true)
       commit('setMapInfoText',newText)
       commit('setMapCenter',selection.position)
-    }
-  },
-  getters : {
-    getChartData: (state,getters) => (hood) => {
-      
+    },
+    toggleFacet({commit},facet){
+      commit('toggleFacet',facet)
     }
   }
 })
