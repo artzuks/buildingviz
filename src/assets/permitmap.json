@@ -1,0 +1,50 @@
+{
+    "AL": {
+        "desc": "ALTERATION",
+        "subtypes":{}
+    },
+    "DM":{
+        "desc": "DEMOLITION & REMOVAL",
+        "subtypes":{}
+    },
+    "EQ":{
+        "desc": "CONSTRUCTION EQUIPMENT",
+        "subtypes":{
+            "CH": "Chute",
+            "FN": "Fence",
+            "SH": "Sidewalk shed",
+            "SF": "Scaffold",
+            "OT": "Other Construction Equipment"
+        }
+    },
+    "FO":{
+        "desc": "FOUNDATION/EARTHWORK",
+        "subtypes":{}
+    },
+    "NB":{
+        "desc": "New Building",
+        "subtypes":{}
+    },
+    "PL":{
+        "desc": "PLUMBING",
+        "subtypes":{}
+    },
+    "SG":{
+        "desc": "SIGN",
+        "subtypes":{}
+    },
+    "EW":{
+        "desc": "EQUIPMENT WORK",
+        "subtypes":{
+            "BL": "Boiler",
+            "FA": "Fire Alarm",
+            "FB": "Fuel Burning",
+            "FP": "Fire Suppression",
+            "FS": "Fuel Storage",
+            "MH": "Mechanical/HVAC",
+            "OT": "Other-General Construction, partitions, marquees, BPP (Builder Pavement Plan), etc.",
+            "SD": "Stand pipe",
+            "SP": "Sprinkler"
+        }
+    }
+}

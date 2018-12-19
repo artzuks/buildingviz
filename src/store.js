@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import Amplify, { API } from 'aws-amplify'
 import markets from './assets/hoods.json'
+import permitTypes from './assets/permitmap.json'
 
 Amplify.configure({
   API: {
@@ -23,6 +24,8 @@ class Facet{
     this.values = [];
     this.buckets = buckets;
     this.showInList  = true;
+    this.displayMap = {};
+
   }
   get facetName(){
     return this.displayName
@@ -36,7 +39,7 @@ class Facet{
     let sel = this.getActiveFacets()
     this.values = facs.map((f)=>{
       return {
-        name : f.value,
+        name : this.displayMap[f.value]?this.displayMap[f.value].desc:f.value,
         value: f.value,
         count : f.count,
         selected : sel.find((s)=>s===f.value)?true:false
@@ -72,8 +75,9 @@ class Facets{
 
     this.facets = {
       'borough_lit' : new Facet('borough_lit',"Borough"),
-      'filing_status_lit' : new Facet('filing_status_lit', 'Filing Status'),
-      'permit_status_lit' : new Facet('permit_status_lit', 'Permit Status'),
+      'permit_type_lit': new Facet('permit_type_lit',"Permit Type"),
+      //'filing_status_lit' : new Facet('filing_status_lit', 'Filing Status'),
+      //'permit_status_lit' : new Facet('permit_status_lit', 'Permit Status'),
       //'city_lit' : new Facet('city_lit','City'),
       'gis_nta_name_lit' : new Facet('gis_nta_name_lit', 'Area'),
       'permittee_s_business_name_lit' : new Facet('permittee_s_business_name_lit','Business'),
@@ -82,6 +86,7 @@ class Facets{
     } 
     this.facets['filing_date_d'].showInList = false;
     this.facets['expiration_date_d'].showInList = false;
+    this.facets['permit_type_lit'].displayMap = permitTypes;
   }
 
   updateFacet({facetName,newValues}){
@@ -200,6 +205,9 @@ export default new Vuex.Store({
     },
     setMapInfo(state,val){
       state.mapInfoOpen = val
+    },
+    setMapInfoText(state,val){
+      state.mapInfoText = val;
     }
   },
   actions: {
@@ -354,6 +362,26 @@ export default new Vuex.Store({
     },
     closeMapInfo:({commit})=>{
       commit('setMapInfo',false)
+    },
+    setMapInfoWindow:({commit},selection)=>{
+      let permitType = permitTypes[selection.fields.permit_type_lit];
+      let subType = null;
+      if (permitType){
+        subType = permitType.subtypes[ selection.fields.work_type_lit];
+        permitType = permitType.desc
+      }else{
+        permitType = selection.fields.permit_type_lit
+      }
+      let newText = "<div>Address: " + selection.fields.street_name_t + '<br>' +
+                    "Construction Company: " + selection.fields.permittee_s_business_name_lit + '<br>' +
+                    "Permit Type: " + permitType;
+      if (subType){
+        newText += "<br>Work Type: " + subType;
+      }
+      newText += "</div>";
+      commit('setMapInfo',true)
+      commit('setMapInfoText',newText)
+      commit('setMapCenter',selection.position)
     }
   },
   getters : {

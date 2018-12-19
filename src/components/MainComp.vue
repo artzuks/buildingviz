@@ -9,7 +9,7 @@
       @bounds_changed="boundsChanged('bounds', $event)"
     >
       <GmapInfoWindow :options="infoOptions" :position="mapCenter" :opened="mapInfoOpen" @closeclick="closeMapInfo">
-        {{mapInfoText}}
+        <div v-html="mapInfoText"></div>
       </GmapInfoWindow>
 
       <GmapMarker
@@ -61,7 +61,7 @@ export default {
     google:gmapApi
   },
   methods:{
-    ...mapActions(['setBounds','refreshFacets','closeMapInfo']),
+    ...mapActions(['setBounds','refreshFacets','closeMapInfo','setMapInfoWindow']),
     'boundsChanged':_.debounce(function(b,e){
       if (e){
         let bounds = {ne:e.getNorthEast(),sw:e.getSouthWest()};
@@ -69,8 +69,9 @@ export default {
         this.refreshFacets();
       }
     },100),
-    clickEvent:(ev)=>{
-      console.log(ev)
+    clickEvent:function(ev){
+      console.log(ev);
+      this.setMapInfoWindow(ev)
     }
   },
   components: {
